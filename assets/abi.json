@@ -1,0 +1,238 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_nomeCandidato",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_partito",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_descrizione",
+				"type": "string"
+			}
+		],
+		"name": "aggiungiCandidato",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_indirizzoElettore",
+				"type": "address"
+			}
+		],
+		"name": "autorizzaElettore",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "candidati",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "nome",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "partito",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "descrizione",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numeroVoti",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "elettori",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "nome",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "autorizzato",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "identificativo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "votato",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getNumeroCandidati",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getVotiTotali",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "infoCandidato",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "partito",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descrizione",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numeroVoti",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Elezioni.Candidato",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_nomeVotazione",
+				"type": "string"
+			}
+		],
+		"name": "inizioVotazione",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nomeVotazione",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "proprietario",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "indiceCandidato",
+				"type": "uint256"
+			}
+		],
+		"name": "votazione",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "votiTotali",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
